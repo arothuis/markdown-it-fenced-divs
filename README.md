@@ -2,7 +2,7 @@
 
 A [markdown-it](https://github.com/markdown-it/markdown-it) 
 plug-in for creating custom fenced divs.
-Based on [markdown-it-containers](markdown-it-container).
+Based on [markdown-it-container](https://github.com/markdown-it/markdown-it-container).
 
 ## Features
 We support the following:
