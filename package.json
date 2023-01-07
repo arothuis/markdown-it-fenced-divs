@@ -1,7 +1,7 @@
 {
   "name": "@arothuis/markdown-it-fenced-divs",
   "version": "0.1.0",
-  "description": "Nestable fenced containers for Markdown",
+  "description": "A markdown-it plug-in for creating custom fenced divs.",
   "main": "src/index.js",
   "files": [
     "src"
