@@ -9,7 +9,8 @@ We support the following:
 * Create arbitrary divs with classnames in Markdown
 * Nesting of named containers
 * Unnamed containers (nesting not supported yet)
-* Integration with [markdown-it-attrs](https://github.com/arve0/markdown-it-attrs)
+* Integration with [markdown-it-attrs](https://github.com/arve0/markdown-it-attrs),
+also for unnamed containers
 
 ## Examples
 For more examples, see: [tests](test/fixtures).
