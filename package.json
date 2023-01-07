@@ -2,6 +2,16 @@
   "name": "@arothuis/markdown-it-fenced-divs",
   "version": "0.1.0",
   "description": "A markdown-it plug-in for creating custom fenced divs.",
+  "keywords": [
+    "markdown",
+    "markdown-it",
+    "fenced divs",
+    "containers"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arothuis/markdown-it-fenced-divs"
+  },
   "main": "src/index.js",
   "files": [
     "src"
