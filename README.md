@@ -1,4 +1,5 @@
 # @arothuis/markdown-it-fenced-divs
+[![Coverage Status](https://coveralls.io/repos/github/arothuis/markdown-it-fenced-divs/badge.svg?branch=main)](https://coveralls.io/github/arothuis/markdown-it-fenced-divs?branch=main)
 
 A [markdown-it](https://github.com/markdown-it/markdown-it) 
 plug-in for creating custom fenced divs.
