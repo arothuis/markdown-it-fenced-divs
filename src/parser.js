@@ -79,7 +79,7 @@ function parser() {
             return nextLine;
         }
 
-        return -1;
+        return endLine;
     }
 
     return {

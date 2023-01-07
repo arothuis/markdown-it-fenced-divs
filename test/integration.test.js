@@ -18,7 +18,8 @@ describe("markdown-it plug-in", function () {
             ["container with inner block to render", "block"],
             ["container with inline content to render", "inline"],
             ["nested containers", "nested"],
-            ["no class name", "no-class"]
+            ["no class name", "no-class"],
+            ["auto-closes on last line if no end marker found", "auto-close"],
         ];
 
         examples.forEach(([specification, fixtureName]) => {
