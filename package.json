@@ -1,6 +1,6 @@
 {
   "name": "@arothuis/markdown-it-fenced-divs",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A markdown-it plug-in for creating custom fenced divs.",
   "keywords": [
     "markdown",
