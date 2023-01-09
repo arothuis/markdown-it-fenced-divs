@@ -9,11 +9,29 @@ Based on [markdown-it-container](https://github.com/markdown-it/markdown-it-cont
 We support the following:
 * Create arbitrary divs with classnames in Markdown
 * Nesting of named containers
-* Unnamed containers (nesting not supported yet)
+* Unnamed containers (nesting not supported)
+* Custom default classes
 * Integration with [markdown-it-attrs](https://github.com/arve0/markdown-it-attrs),
 also for unnamed containers
 
-## Examples
+## Installation
+Install the plugin via NPM:
+```
+npm i @arothuis/markdown-it-fenced-divs
+```
+
+Add the plugin to markdown-it:
+```javascript
+const markdownIt = require("markdown-it");
+const mdFenced = require("@arothuis/markdown-it-fenced-divs");
+
+const md = markdownIt();
+
+// With default configuration
+md.use(mdFenced);
+```
+
+## Usage examples
 For more examples, see: [tests](test/fixtures).
 
 ### Basic use case
@@ -64,3 +82,16 @@ our indentation. As soon as we use
 4 spaces, our lines will be treated as
 part of a code block, which causes unexpected
 results.
+
+## Customization
+The following properties can be customized:
+```javascript
+const options = {
+    // Class to add to each fenced div element (for easy generic styling)
+    defaultClass: "",
+};
+
+
+// Add plugin with custom options
+md.use(mdFenced, options);
+```

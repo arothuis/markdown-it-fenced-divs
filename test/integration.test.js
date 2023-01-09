@@ -10,7 +10,7 @@ const fixture = name => readFileSync(`${__dirname}/fixtures/${name}`, "utf-8");
 // Finicky to maintain, but illustrative for desired outputs
 //  @TODO: Replace with snapshot testing when API stabilizes
 describe("markdown-it plug-in", function () {
-    md.use(mdFenced)
+    md.use(mdFenced);
 
     context("default configuration", function () {
         const examples = [
@@ -34,7 +34,7 @@ describe("markdown-it plug-in", function () {
     });
 
     context("markdown-it-attrs integration", function () {
-        md.use(mdAttrs)
+        md.use(mdAttrs);
         const examples = [
             ["class only added with attrs", "class-only-attrs"],
             ["class in block, class added with attrs", "class-with-attrs"],
@@ -48,6 +48,18 @@ describe("markdown-it plug-in", function () {
               const expected = fixture(`${fixtureName}.html`);
               expect(output).to.equal(expected);
             });
+        });
+    });
+
+    context("customization", function () {
+        specify("add custom default class to each fenced div", function () {
+            md.use(mdFenced, { defaultClass: "fenced" });
+            
+            const input = fixture("single.md");
+            const expected = fixture("single-custom-default-class.html");
+            const output = md.render(input);
+
+            expect(output).to.equal(expected);
         });
     });
 });
